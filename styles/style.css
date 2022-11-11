@@ -1,0 +1,307 @@
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===============блок  CONTAINER ========== */
+.container{
+    width: 960px;
+    margin:  0 auto;
+    background-color: yellow;      
+}
+
+
+/* ==============блок HEADER=========== */
+.header{
+    height: 125px;
+    background-color: #EDDEEE;
+    position: relative;    
+    /*background-color: url() no-repeat 100%;*/
+    background: rgba(242,185,145,0.22);
+}
+
+.logo{
+    position: absolute;
+    margin-left: 15px;
+    margin-top:  15px;
+    float: left;
+}
+
+.store-name{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-size:  20px;
+}
+
+#main_menu {
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.main_menu li{
+    /*list-style-type: none;*/
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.main_menu a {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #ff68b9;
+    text-decoration: none;
+}
+
+.main_menu a:hover {
+    color: mediumvioletred;
+    text-decoration: underline;
+}
+
+/* ==========блок CONTENT============= */
+.content{
+        margin: 0 auto;
+        padding: 0 20px;
+}
+
+.content-just {text-align: justify;}
+
+hr{margin: 0;}
+
+/* ========= блок FOOTER ======= */
+.footer {
+    text-align: right;
+    font-weight: normal;
+    height: 100px; 
+    background: rgba(242,185,145,0.22);  
+    clear: both;  
+}
+
+.footer p{
+    margin-right: 30px;    
+    margin-top: 20px;
+}
+
+/* =============СТРАНИЦА "ТОВАР"========== */
+.product-header {
+    color: black;
+    font-size: 18px;
+    background-color: #eaeaea;
+    font-weight: bold;     
+}
+
+#short_descr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic; 
+    text-align: justify;  
+}
+
+#short_descr:first-letter {
+    color: #ff68b9;
+    font-family: Arial, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.product-imgAndShortDesc{
+    /*width: 100%;
+    float: left;
+    margin-bottom: 15px;*/
+    overflow: hidden;
+}
+
+    .product-img {
+        float: left;        
+        width: 20%;
+        /*width: 16%;*/
+        /*background-color: red;*/
+        
+    }
+     .product-img > a{
+        display: block;
+     }
+
+    .product-ShortDesc{
+        float: right;
+        /*margin-top: -15px;*/
+        width:  78%;
+        /*width:  82%;*/
+        /*background-color: green;*/
+        
+    } 
+
+.product-ShortDesc > .product-header{
+    margin-top: 0px;
+}
+
+.product-BuyBtn{
+    display: block;
+    float: right;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius:  10px;
+    font-family: sans-serif;
+    font-weight:  bold;
+    color: #E8BA94;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+51,bf6e4e+100;Brown+Gloss */
+    background: #f0b7a1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+
+}
+
+.product-BuyBtn:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+background: #b4e391; /* Old browsers */
+background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+
+}
+
+.product-BuyBtn:active{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+    background: #f3e2c7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+
+}
+
+.detailed_descr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.detailed_descr:first-letter {
+    color: #ff68b9;
+    font-family: Arial, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.prod_charact li {
+    color: black;
+    font-family: Arial, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    list-style: none;
+    /*list-style-image: url("../images/marker.png");*/
+    background: url("../images/marker.png") no-repeat;
+    padding-left: 20px;
+    background-size: 1.0%;
+}
+
+
+.prod_img {
+    border: 2px solid #ff68b9;
+    width: 100%;
+    
+}
+
+.prod_img:hover {
+    border-color: #f8f8f8;
+    
+    /*border-color: transparent;*/
+
+}
+
+
+
+/* ============= CТРАНИЦА "КОНТАКТЫ"============ */
+.contacts-input {
+    height: 20px;
+    width:  180px;
+    color: #ff68b9;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    }
+
+.contacts-input[type="email"]:focus {
+    color: #00FF00;
+    background-color: yellow;
+}
+
+.contacts-input[type="text"]{
+    text-transform: capitalize;
+}
+
+textarea {
+    color: #ff68b9;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#product_table, #product_table th, #product_table td {
+    border: 1px solid #000;
+    border-collapse: collapse;}
+
+#product_table th {
+    text-align: left;
+}
+
+/*============ КАТАЛОГ======================= */
+
+.catalog{
+    width:  100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.catalog-child{
+    width: 18%;
+    float: left;
+    margin-right: 0%;
+    margin-bottom: 35px;
+    background: #ccc;
+    outline:  2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.catalog-img img{
+    width: 100%;
+};
+
+
+/*================================== другой способ ===================*/
+/*
+.catalog {
+    width: 100%;      
+}
+
+.catalog-child{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    background: #ccc;
+    margin-bottom: 20px;
+    outline:  2px solid #ccc;
+}
+
+.catalog-child:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.catalog-img img{
+    width: 100%;
+};
+*/
+
+/*=============================================================*/
